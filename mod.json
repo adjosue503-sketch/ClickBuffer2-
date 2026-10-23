@@ -1,0 +1,25 @@
+{
+  "geode": "5.11.2",
+  "gd": { "win": "2.2081" },
+  "version": "v1.0.0",
+  "id": "tunombre.click-buffer",
+  "name": "Click Buffer",
+  "developer": "tunombre",
+  "description": "Guarda un click pulsado justo antes de aterrizar y lo aplica al tocar suelo o techo (cubo, robot, bola y araña; el resto de vehículos no lo necesitan).",
+  "settings": {
+    "enabled": {
+      "type": "bool",
+      "name": "Activado",
+      "default": true
+    },
+    "buffer-ms": {
+      "type": "int",
+      "name": "Ventana del búfer (ms)",
+      "description": "Cuánto tiempo antes de aterrizar se guarda el click.",
+      "default": 60,
+      "min": 0,
+      "max": 150,
+      "control": { "slider": true }
+    }
+  }
+}
